@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sally Resume</title>
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      // App Component
+      function App() {
+        return (
+          <div>
+            <header>
+              <h1>Sally Student Resume</h1>
+            </header>
+            <main>
+              <section>
+                <h2>Education</h2>
+                <ul>
+                  <li> School of Hard Knocks, PHD </li>
+                  <li> Hogwarts School of Witchcraft and Wizardry</li>
+                </ul>
+              </section>
+              <section>
+                <h2>Employment History</h2>
+                <ul>
+                  <li>
+                    Dark Horse Music Co., Full-Stack Developer
+                    <ul>
+                      <li> November 2016- present</li>
+                      <li> Responsibilities: Lorem Ipsum bloobidy bla bla</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Astatula Media, Junior Software Developer
+                    <ul>
+                      <li> May 2014-November 2016</li>
+                      <li>
+                        {" "}
+                        Responsiblities: Lorem Ipsum bloobidy bla bla bla
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+
+              <address>
+                Contact Information
+                <ul>
+                  <li>Sally Student</li>
+                  <li>
+                    <a href="mailto:sallywally@sally.com">
+                      sallywally@sally.com
+                    </a>
+                  </li>
+                  <li>111-111-1111</li>
+                </ul>
+              </address>
+
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+                alt="a photo of a beautiful and funny woman that is humongous compared to text on page"
+              />
+            </main>
+          </div>
+        );
+      }
+
+      // Use the App component:
+      // insert the App's element tree into the #application-root
+      ReactDOM.render(<App />, document.querySelector("#application-root"));
+    </script>
+  </body>
+</html>
